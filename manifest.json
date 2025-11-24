@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Bye YT Shorts",
+  "version": "1.2",
+  "description": "Removes YouTube Shorts from homepage and sidebar safely without breaking the grid layout.",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["src/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    }
+  },
+  "host_permissions": ["*://www.youtube.com/*"]
+}
