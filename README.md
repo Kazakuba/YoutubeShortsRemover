@@ -46,7 +46,7 @@ Row Consolidation: If a video row (ytd-rich-grid-row) contains only hidden Short
 
 ---
 
-## 📦 Installation (Developer Mode)
+## 📦 Installation
 1. Clone this repository.
 2. Open Chrome and visit `chrome://extensions`.
 3. Enable **Developer Mode** (top right corner).
